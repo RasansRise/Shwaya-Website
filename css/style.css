@@ -84,16 +84,23 @@ theme.
   text-align:center!important ;
 }
 .column{
+  display: flex;
   flex-direction: column;
 }
 .full-width{
   max-width:100% !important;
 }
-
+.half-width{
+  width: 50% !important;
+  padding: 0px 50px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "LavaFont",sans-serif !important;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -421,7 +428,7 @@ textarea {
   left: 0;
   top: 0;
   z-index: 11;
-  background: #75dab4;
+  background: #e20519;
   text-align: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -457,6 +464,7 @@ textarea {
   position: relative;
   z-index: 2;
   margin: 0 auto;
+  width:200px;
 }
 .preloader .inner span {
   color: #fff;
@@ -531,7 +539,7 @@ textarea {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: #75dab4;
+  background: #e20519;
 }
 .page-transition .layer {
   width: 0;
@@ -579,7 +587,7 @@ textarea {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: #75dab4;
+  background: #e20519;
   padding-right: 120px;
 }
 
@@ -666,7 +674,7 @@ textarea {
   transition: 0.25s ease-in-out;
 }
 .site-navigation .inner ul li a:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 .site-navigation.active {
@@ -703,7 +711,7 @@ textarea {
   right: -100%;
   top: 0;
   z-index: 3;
-  background: #75dab4;
+  background: #e20519;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -766,7 +774,7 @@ textarea {
   color: #fff;
 }
 .social-media .inner ul li a:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 .social-media.active {
@@ -794,7 +802,7 @@ textarea {
   right: -100%;
   top: 0;
   z-index: 3;
-  background: #75dab4;
+  background: #e20519;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
@@ -903,7 +911,7 @@ textarea {
   cursor: pointer;
 }
 .all-cases-link b:hover {
-  background: #75dab4;
+  background: #e20519;
   text-decoration: none;
   color: #fff;
 }
@@ -921,7 +929,7 @@ textarea {
   z-index: 10;
   text-align: center;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 30px;
+  padding: 50px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -932,13 +940,14 @@ textarea {
   transition-delay: 1s;
   opacity: 0;
 }
+.logo{
+  width:200px;
+}
 .left-side .logo {
   display: inline-block;
   margin-bottom: auto;
 }
-.left-side .logo img {
-  width: 100px;
-}
+
 
 .left-side .follow-us {
   width: 100px;
@@ -1171,7 +1180,7 @@ textarea {
 }
 .video-hero .inner a:hover {
   text-decoration: none;
-  color: #75dab4;
+  color: #e20519;
 }
 
 /* CAROUSEL HERO */
@@ -1250,7 +1259,7 @@ textarea {
 }
 .carousel-hero .carousel-slider .swiper-slide .inner a:hover {
   text-decoration: none;
-  color: #75dab4;
+  color: #e20519;
 }
 .carousel-hero .swiper-button-prev {
   height: auto;
@@ -1350,7 +1359,7 @@ textarea {
 .page-header .inner h1 {
   color: #fff;
   font-weight: 800;
-  font-size: 10vw;
+  font-size: 7vw;
   letter-spacing: -3px;
 }
 .page-header .inner p {
@@ -1370,9 +1379,9 @@ textarea {
   color: #fff;
   background: #161619;
 }
-.intro .col-lg-7 {
+/* .intro .col-lg-7 {
   padding-left: 10%;
-}
+} */
 .intro h6 {
   font-weight: 600;
   text-transform: uppercase;
@@ -1411,7 +1420,7 @@ textarea {
 .intro a {
   color: #fff;
   font-size: 17px;
-  border-bottom: 1px solid #75dab4;
+  border-bottom: 1px solid #e20519;
   padding-bottom: 5px;
 }
 .intro a:hover {
@@ -1651,7 +1660,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   padding: 100px 80px;
-  background: #75dab4;
+  background: #e20519;
   color: #222327;
 }
 .testimonials .testimonial blockquote {
@@ -1777,7 +1786,7 @@ textarea {
   padding: 5px;
 }
 .team figure ul li a:hover {
-  color: #75dab4;
+  color: #e20519;
 }
 
 /* WORKS */
@@ -2012,7 +2021,7 @@ textarea {
   padding: 3px 6px;
 }
 .blog .sidebar .widget .tags li a:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 .blog .sidebar .widget .mini-works {
@@ -2178,7 +2187,7 @@ textarea {
   color: #161619;
 }
 .blog .post .post-content .post-title a:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 .blog .post .post-content .post-author {
@@ -2223,7 +2232,7 @@ textarea {
   padding: 3px 6px;
 }
 .blog .post .post-content .post-categories li a:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 .blog .post .post-content .post-link {
@@ -2232,7 +2241,7 @@ textarea {
   padding-bottom: 5px;
 }
 .blog .post .post-content .post-link:hover {
-  color: #75dab4;
+  color: #e20519;
   text-decoration: none;
 }
 
@@ -2391,10 +2400,30 @@ textarea {
   background: url(../images/footer-bg.png) top center no-repeat;
   background-size: 80% auto;
 }
+.footer .container{
+  display:flex;
+}
+@media(max-width:500px){
+  .footer .container{
+    display:flex;
+    flex-direction: column;
+  }
+  .half-width{
+    width:100% !important;
+  } 
+}
+.footer .logo .title{
+  margin-top:20px;
+}
 .footer ul {
   margin: 0;
   padding: 0;
   float: left;
+  text-align: left;
+}
+.footer ul.footer-contact a{
+  margin:0px 10px;
+  
 }
 .footer ul li {
   display: inline-block;
@@ -2402,10 +2431,10 @@ textarea {
 }
 .footer ul li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 20px;
 }
 .footer ul li a:hover {
-  color: #75dab4;
+  color: #e20519;
 }
 .footer h6 {
   font-family: "Fjalla One", sans-serif;
@@ -2422,7 +2451,7 @@ textarea {
 .footer .link {
   color: #fff;
   font-size: 17px;
-  border-bottom: 1px solid #75dab4;
+  border-bottom: 1px solid #e20519;
   padding-bottom: 5px;
 }
 .footer .link:hover {
@@ -2450,7 +2479,7 @@ textarea {
 }
 .footer .footer-bar .creation a:hover {
   text-decoration: none;
-  color: #75dab4;
+  color: #e20519;
 }
 
 /* RESPONSIVE TABLET FIXES */
@@ -2645,7 +2674,7 @@ textarea {
 
   .page-header .inner p {
     font-size: 17px;
-    padding-right: 10%;
+    /* padding-right: 10%; */
   }
 
   .all-cases .inner {
