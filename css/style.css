@@ -97,6 +97,36 @@ theme.
 h1,h2,h3,h4,h5,h6{
   font-family: "LavaFont",sans-serif !important;
 }
+.padding-0{
+  padding:0px !important;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width:50%;
+  padding:50px 0px;
+}
+@media (max-width:500px){
+  .menu{
+      width: 70%;
+  }
+}
+.section{
+  width:100%;
+  margin-top:50px;
+}
+.section .title{
+  margin-bottom:20px;
+  color:#e20519;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+}
+.menu hr{
+  border-top: 1px solid white;
+}
 body {
   margin: 0;
   padding: 0;
@@ -692,7 +722,8 @@ textarea {
 /* SECTION TITLES */
 .section-title {
   font-family: "Fjalla One", sans-serif;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  color:#e20519;
   line-height: 1.4;
   font-size: 4vw;
   letter-spacing: 2px;
@@ -1332,6 +1363,9 @@ textarea {
   transform: scale(1.2);
   filter: blur(20px);
   transition-delay: 0.8s;
+}
+.page-header-50 {
+  height: 50vh !important;
 }
 .page-header .video-bg {
   width: 100%;
@@ -2273,16 +2307,56 @@ textarea {
 }
 
 /* CONTACT */
+.copyright{
+  font-size: 14px;
+  font-family: "Poppins",sans-serif;
+  color:#A7A7A7
+}
 .contact {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 0;
-  background: #fff;
+  padding: 150px 0 50px;
+
+}
+.contact .row{
+  flex-direction: column;
+}
+.contact .container{
+  max-width: 100%;
+  text-align: center;
+}
+.contact .contact-us{
+  width:50%;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contact .links{
+  margin:30px auto 0px;
+  width:115px
+}
+.contact .links ul{
+  list-style-type:none;
+  padding:0px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+.contact .links ul a{
+  color:white;
+  margin:auto;
+  font-size:20px;
+  transition-timing-function: ease;
+}
+.contact .links ul a:hover{
+  color:#e20519;
 }
 .contact h6 {
   font-weight: 600;
   margin-top: 30px;
+  font-size: 3rem;
 }
 .contact address {
   display: block;
@@ -2292,6 +2366,7 @@ textarea {
 }
 .contact address a {
   text-decoration: underline;
+  color:white ;
 }
 .contact .contact-form {
   width: 100%;
@@ -2374,11 +2449,15 @@ textarea {
   border-radius: 0;
   padding: 20px 30px;
 }
+.contact .map-container{
+  width:100%;
+}
 .contact .map {
-  width: 80%;
+  width: 100%;
   height: 400px;
   display: block;
   background: #222327;
+  margin:50px 0px;
 }
 .contact .map iframe {
   width: 100%;
@@ -2400,18 +2479,40 @@ textarea {
   background: url(../images/footer-bg.png) top center no-repeat;
   background-size: 80% auto;
 }
+.footer-contact{
+  direction: ltr;
+}
 .footer .container{
   display:flex;
+}
+
+.mobile{
+  display: none;
+}
+.footer .logo{
+  margin-right:25px;
 }
 @media(max-width:500px){
   .footer .container{
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .half-width{
     width:100% !important;
+    padding:0px;
+  }
+  .logo{
+      margin-right:auto !important ;
+      width:150px;
   } 
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: inline;
+  }
 }
+
 .footer .logo .title{
   margin-top:20px;
 }
@@ -2431,7 +2532,7 @@ textarea {
 }
 .footer ul li a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer ul li a:hover {
   color: #e20519;
@@ -2634,7 +2735,7 @@ textarea {
 
   .contact .map {
     width: 100%;
-    margin: 50px 0;
+    margin: 80px 0;
   }
 
   .contact .contact-form {
