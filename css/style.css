@@ -92,7 +92,7 @@ theme.
 }
 .half-width{
   width: 50% !important;
-  padding: 0px 50px;
+  
 }
 h1,h2,h3,h4,h5,h6{
   font-family: "LavaFont",sans-serif !important;
@@ -1366,6 +1366,9 @@ textarea {
 }
 .page-header-50 {
   height: 50vh !important;
+  background-image: url(../images/2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .page-header .video-bg {
   width: 100%;
@@ -1375,6 +1378,7 @@ textarea {
   top: 0;
   overflow: hidden;
 }
+
 .page-header .video-bg video {
   min-width: 100%;
   min-height: 100%;
@@ -1392,8 +1396,7 @@ textarea {
 }
 .page-header .inner h1 {
   color: #fff;
-  font-weight: 800;
-  font-size: 7vw;
+  font-size: 100px;
   letter-spacing: -3px;
 }
 .page-header .inner p {
@@ -2365,7 +2368,6 @@ textarea {
   margin: 0;
 }
 .contact address a {
-  text-decoration: underline;
   color:white ;
 }
 .contact .contact-form {
@@ -2484,6 +2486,7 @@ textarea {
 }
 .footer .container{
   display:flex;
+  justify-content: space-evenly;
 }
 
 .mobile{
@@ -2492,17 +2495,32 @@ textarea {
 .footer .logo{
   margin-right:25px;
 }
-@media(max-width:500px){
+@media (max-width:990px){
+  .footer .container{
+    max-width:900px;
+  }
+}
+@media(max-width:570px){
   .footer .container{
     display:flex;
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer .container .row{
+    margin-bottom:10px !important;
+  }
+  .footer ul{
+    margin-bottom:20px !important;
   }
   .half-width{
     width:100% !important;
     padding:0px;
   }
-  .logo{
-      margin-right:auto !important ;
+  .footer ul{
+    text-align: center !important;
+  }
+  .footer .logo{
+      margin:auto !important ;
       width:150px;
   } 
   .desktop{
@@ -2511,6 +2529,7 @@ textarea {
   .mobile{
     display: inline;
   }
+
 }
 
 .footer .logo .title{
@@ -2532,7 +2551,7 @@ textarea {
 }
 .footer ul li a {
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
 }
 .footer ul li a:hover {
   color: #e20519;
