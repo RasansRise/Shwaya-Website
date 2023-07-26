@@ -695,7 +695,6 @@ textarea {
 .site-navigation .inner ul li a {
   font-size: 50px;
   display: inline-block;
-  font-weight: 800;
   color: #fff;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -2331,6 +2330,9 @@ textarea {
   padding: 150px 0 50px;
 
 }
+.contact h1{
+  font-size:100px;
+}
 .contact .row{
   flex-direction: column;
 }
@@ -2366,7 +2368,6 @@ textarea {
   color:#e20519;
 }
 .contact h6 {
-  font-weight: 600;
   margin-top: 30px;
   font-size: 3rem;
 }
