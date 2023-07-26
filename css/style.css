@@ -978,7 +978,23 @@ textarea {
   display: inline-block;
   margin-bottom: auto;
 }
+@media(max-width:600px){
+  .left-side{
+    padding:30px;
+  }
+  .left-side .logo{
+    width:150px;
+  }
+}
 
+@media(max-width:500px){
+  .left-side{
+    padding:20px;
+  }
+  .left-side .logo{
+    width:125px;
+  }
+}
 
 .left-side .follow-us {
   width: 100px;
@@ -1160,28 +1176,17 @@ textarea {
 /* VIDEO HERO */
 .video-hero {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  position: relative;
+  height: auto;
 }
+
 .video-hero .video-bg {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
+  height: auto;
   background: #222327;
 }
 .video-hero .video-bg video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   opacity: 1;
 }
 .video-hero .inner {
@@ -1448,6 +1453,11 @@ textarea {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 35px;
+}
+@media(max-width:500px){
+  .intro p{
+    font-size: 16px;
+  }
 }
 .intro small {
   display: block;
