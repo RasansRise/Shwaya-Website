@@ -119,10 +119,24 @@ h1,h2,h3,h4,h5,h6{
 .section .title{
   margin-bottom:20px;
   color:#e20519;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .title .subtitle{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:15px;
 }
 .item{
   display: flex;
   justify-content: space-between;
+}
+.price span:nth-child(1){
+  margin-left:40px;
+}
+.price span:nth-child(2){
+  margin-left:10px;
 }
 .menu hr{
   border-top: 1px solid white;
