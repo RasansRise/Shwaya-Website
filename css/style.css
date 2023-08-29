@@ -130,7 +130,7 @@ h1,h2,h3,h4,h5,h6{
 .section .title .subtitle{
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap:15px;
+    grid-gap:30px;
 }
 .item{
   display: flex;
