@@ -152,10 +152,16 @@ h1,h2,h3,h4,h5,h6{
 /* .menu .section:nth-child(6) .price{
   width: 8%;
 } */
- .menu  .section .item .normal{
+ .normal{
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   color: #e20519;
+ }
+ .check-info {
+  display: flex
+;
+    align-items: center;
+    gap: 5px;
  }
  .menu  .section .item .normal2{
   font-size: 16px;
@@ -163,6 +169,7 @@ h1,h2,h3,h4,h5,h6{
 .menu hr{
   border-top: 1px solid white;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -203,6 +210,63 @@ a:hover {
     max-width: 1340px;
   }
 }
+
+    .section {
+      /* max-width: 900px; */
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .section h1 {
+      color: #e20519;
+    }
+    .table thead th{
+    vertical-align: middle;
+    }
+    .table thead th:first-child{
+   width: 70%;
+   text-align: justify;
+    }
+/* 
+    .image img {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 30px;
+    } */
+
+    .table thead th {
+      color: #e20519;
+      border-bottom: none;
+    }
+
+    .table tbody tr {
+      border-top: 1px solid white;
+    }
+
+    .table td, .table th {
+      vertical-align: middle;
+    }
+
+    .table td:first-child {
+      text-align: right;
+    }
+
+    .table td:nth-child(2),
+    .table td:nth-child(3) {
+      text-align: center;
+    }
+
+    @media (max-width: 576px) {
+      .table-responsive {
+        font-size: 14px;
+      }
+      .check-info {
+    display: block
+;
+ 
+    font-size: 12px;
+    }
+  }
 /* SECTIONS */
 main {
   width: 100%;
