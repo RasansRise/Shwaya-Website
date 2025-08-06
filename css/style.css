@@ -1216,7 +1216,7 @@ textarea {
 .video-hero .video-bg {
   width: 100%;
   height: auto;
-  background: #222327;
+  background: black;
 }
 .video-hero .video-bg video {
   width: 100%;
@@ -1453,7 +1453,7 @@ textarea {
   flex-wrap: wrap;
   padding: 150px 0;
   color: #fff;
-  background: #161619;
+  background: black;
 }
 /* .intro .col-lg-7 {
   padding-left: 10%;
