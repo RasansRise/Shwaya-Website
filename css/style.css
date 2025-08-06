@@ -109,11 +109,7 @@ h1,h2,h3,h4,h5,h6{
   width:50%;
   padding:50px 0px;
 }
-@media (max-width:500px){
-  .menu{
-      width: 70%;
-  }
-}
+
 .section{
   width:100%;
   margin-top:50px;
@@ -144,6 +140,26 @@ h1,h2,h3,h4,h5,h6{
 .price span:nth-child(2){
   margin-left:10px;
 }
+.menu .section .price{
+  width: 22.5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.menu .section:nth-child(11) .price{
+  width: 13.5%;
+}
+/* .menu .section:nth-child(6) .price{
+  width: 8%;
+} */
+ .menu  .section .item .normal{
+  font-weight: normal;
+  font-size: 14px;
+  color: #e20519;
+ }
+ .menu  .section .item .normal2{
+  font-size: 16px;
+ }
 .menu hr{
   border-top: 1px solid white;
 }
@@ -154,7 +170,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  background: #222327;
+  background: black;
 }
 
 /* HTML ELEMENTS */
@@ -194,7 +210,7 @@ main {
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  background: #222327;
+  background: black;
 }
 
 section {
@@ -505,7 +521,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  background: #1c1c1c;
+  background: black;
   transition-delay: 0.3s;
 }
 .preloader .inner {
@@ -596,7 +612,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 0;
-  background: #1c1c1c;
+  background: black;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -647,7 +663,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 0;
-  background: #161619;
+  background: black;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -3070,6 +3086,133 @@ textarea {
     transform-origin: right center;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
+  }
+}
+.menu .section:nth-child(12) .price {
+        width: 12.5%;
+    }
+    .menu .section:nth-child(11) .price {
+    width: 22.5%;
+}
+.menu .section:nth-child(7) .price {
+    width: 3.5%;
+}
+@media screen and (min-width: 1081px) and (max-width: 1000px) {
+    .menu .section:nth-child(6) .price {
+        width: 33%;
+    }
+    .menu .section:nth-child(7) .price {
+        width: 4.5%;
+    }
+    .menu .section:nth-child(11) .price {
+        width: 33.5%;
+    }
+    .menu .section:nth-child(12) .price {
+        width: 12.5%;
+    }
+    .menu{
+  
+    width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 1023px) and (max-width: 1080px) {
+.section .title .subtitle {
+    grid-gap: 75px;
+}
+    .menu .section:nth-child(12) .price {
+        width: 27.5% !important;
+    }
+    .menu{
+  
+    width: 70%;
+}
+.menu .section:nth-child(6) .price {
+    width: 33%;
+}
+.menu .section:nth-child(7) .price {
+     
+        width: 4.5%;
+    
+}
+.menu .section .price {
+    width: 33.5%;
+}
+.menu .section:nth-child(11) .price {
+    width: 33.5%;
+}
+  
+}
+@media screen and (min-width: 768px) and (max-width: 900px){
+.menu .section .price {
+    width: 37.5%;
+}
+.menu .section:nth-child(6) .price {
+    width: 37.5%;
+}
+.section:nth-child(7) .title {
+    width: 90%;
+
+} 
+    .menu .section:nth-child(7) .price {
+        width: 21.5%;
+    }
+    .menu .section:nth-child(11) .price {
+        width: 37.5%;
+    }
+        .menu .section:nth-child(12) .price {
+        width: 27.5%;
+    }
+    .menu {
+    width: 70%;
+}
+.section .title .subtitle {
+    grid-gap: 40px;
+}
+  
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+.section .title {
+    width: 95%;
+}
+  
+}
+
+@media screen and (max-width:600px){
+     .menu {
+        width: 90%;
+    }
+    .menu .name {
+        font-size: 14px;
+    }
+    .menu .section .price{
+    width: 55%;
+
+}
+.menu .section:nth-child(3) .name{
+    width: 55%;
+}
+.menu .section .title h1 {
+  font-size: 30px;
+}
+.menu .section:nth-child(6) .price {
+    width: 53%;
+}
+.menu .section:nth-child(7) .price {
+    width: 20%;
+}
+.menu .section:nth-child(11) .price {
+    width: 52.5%;
+}
+    .menu .section:nth-child(12) .price {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .menu {
+    width: 80%;
   }
 }
 
